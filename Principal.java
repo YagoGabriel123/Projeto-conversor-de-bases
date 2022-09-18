@@ -35,6 +35,16 @@ public class Principal {
 			System.out.println("Digite a Base de destino:");
 			int b_out = entrada.nextInt();// base de destino
 
+			if(num1_double < 0) {
+				num1_double = num1_double*(-1);
+				
+			}
+			if (b_in < 2 || b_out < 2 || b_out > 16  || b_in > 16) {
+				
+				System.out.println(" AS BASES DEVEM SER:  2 <= B_IN <=16  E  2 <= B_IN <=16");
+				System.exit(0);
+			}
+			
 			// Parte inteira do Num_1
 			int num1_int = (int) num1_double; // Parte inteira da entrada
 
@@ -141,4 +151,3 @@ public class Principal {
 		}
 	}
 }
-
